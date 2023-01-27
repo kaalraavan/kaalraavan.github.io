@@ -6,6 +6,6 @@ Personal webpage of Shivam Jaiswal  -->
     </head>
     <body>
         <br><H1><center>Shivam Jaiswal</center></H1><br><br><br><br>
-        <h3><center>Website under construction..</center></h3>
+        <h3><center>Website under construction</center></h3>
     </body>
 </html>
