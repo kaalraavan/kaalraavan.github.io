@@ -1,2 +1,2 @@
 # kaalraavan.github.io
-Personal webpage Shivam Jaiswal 
+Personal webpage of Shivam Jaiswal 
