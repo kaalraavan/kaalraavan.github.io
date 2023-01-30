@@ -13,3 +13,41 @@ img{
 /*table{
     border-collapse: collapse;
 }*/
+
+.full_image{
+    width: 100%;
+    height: 100%;
+    padding: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.text_image{
+    position: relative;
+    font-family: 'Times New Roman'; 
+    color: white;
+}
+
+/*Temp*/
+.site_develpoment { 
+    position: absolute;
+    left: 50%;
+    top: 800px;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.text_on_first_image{
+    position: absolute;
+    left: 50%;
+    top: 670px;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+}

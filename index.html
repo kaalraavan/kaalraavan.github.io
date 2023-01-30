@@ -1,15 +1,163 @@
+<!-- Main page of the website -->
+<!DOCTYPE html>
 <html>
     <head>
         <title>Shivam Jaiswal</title>
         <link rel = "icon" href = "resources/media/icon/header-icon.png" type = "image/x-icon">
+        
+        <!-- add css style file location here-->
+        <link href ="resources/style-files/index_style.css" rel = "stylesheet">
+
+        <!-- add script file for tabs-->
+        <script src = "resources/scripts/index_tabs.js"></script>
     </head>
     <body>
-        <br><H1><center>Shivam Jaiswal</center></H1><br><br><br><br>
-        <h3><center>Website under construction.</center></h3>
-        <h3><center>We will be back soon</center></h3><br><br><br>
-        <h3><center>Please click below link to visit Linkdin page of Shivam Jaiswal</center></h3>
-        <h2><a href="https://www.linkedin.com/in/shivam-bharat/"><center>Shivam-bharat Linkdin</center></a></h2>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <a href = "test.html" color = black><center>test</center></a>
+        <div class = "text_image">
+            <img src="resources/media/pictures/Laptop_top.jpg" class="full_image" alt="reload">
+            <div class="text_on_first_image">
+                Shivam Jaiswal
+            </div>
+            <div class = "site_develpoment">
+                Site under development, please visit Linkedin (click below)<br><br>
+                <a href="https://www.linkedin.com/in/shivam-bharat/" target="_blank">
+                    <center><img src="resources/media/icon/Linkedin_logo.png" style="border-radius: 10%;"></center>
+                </a>
+            </div>
+        </div>
+        <!-- Tabs from second screens -->
+        <button class="tablinks" onclick="tabControl(event, 'Education')">Education</button>
+        <button class="tablinks" onclick="tabControl(event, 'Experience')">Experience</button>
+        <button class="tablinks" onclick="tabControl(event, 'Skills and Cocurriculars')">Skills and Cocurriculars</button>
+        <button class="tablinks" onclick="tabControl(event, 'Projects')">Projects</button>
+        <button class="tablinks" onclick="tabControl(event, 'Publications')">Publications</button>
+        <button class="tablinks" onclick="tabControl(event, 'Articles')">Articles</button>
+        <button class="tablinks" onclick="tabControl(event, 'Contacts')">Contacts</button>
+
+        <!-- contents of each tab -->
+        <!-- Education -->
+        <div id="Education" class="tabContents">
+            <table>
+                <tr>
+                    <td class="td_border"><p>M-Tech degree</p></td>
+                    <td><img src = "resources/media/icon/header-icon.png"></td>
+                </tr>
+                <tr>
+                    <td  class = "td_border"><p>B.Tech degree</p></td>
+                    <td><img src = "resources/media/icon/header-icon.png"></td>
+                </tr>
+                <tr>
+                    <td  class = "td_border"><p>12th CBSE certificate</p></td>
+                    <td><img src = "resources/media/icon/header-icon.png"></td>
+                </tr>
+                <tr>
+                    <td  class = "td_border"><p>10th CBSE certificate</p></td>
+                    <td><img src = "resources/media/icon/header-icon.png"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Experience -->
+        <div id="Experience" class="tabContents">
+            <table>
+                <tr>
+                    <td  class = "td_border"><p>DRDO</p></td>
+                    <td><img src = "resources/media/icon/header-icon.png"></td>
+                </tr>
+                <tr>
+                    <td class = "td_border"><p>CSIR</p></td>
+                    <td><img src = "resources/media/icon/header-icon.png"></td>
+                </tr>
+                <tr>
+                    <td class = "td_border"><p>Agnikul Cosmos</p></td>
+                    <td><img src = "resources/media/icon/header-icon.png"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Skills and cocurriculars -->
+        <div id="Skills and Cocurriculars" class="tabContents">
+            <table>
+                <tr>
+                    <td class = "td_border">
+                        Skills
+                        <ul>
+                            <li>One</li>
+                            <li>Two</li>
+                            <li>Three</li>
+                        </ul>
+                    </td>
+                    <td><img src = "resources/media/icon/header-icon.png"></td>
+                </tr>
+                <tr>
+                    <td class = "td_border">
+                        Cocurriculars
+                        <ul>
+                            <li>One</li>
+                            <li>Two</li>
+                            <li>Three</li>
+                        </ul>
+                    </td>
+                    <td><img src = "resources/media/icon/header-icon.png"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Projects and competitions -->
+        <div id="Education" class="tabContents">
+            <table>
+                <tr>
+                    <td class = "td_border"><p>Project 1</p></td>
+                    <td><img src = "resources/media/icon/header-icon.png"></td>
+                </tr>
+                <tr>
+                    <td class = "td_border"><p>Project 2</p></td>
+                    <td><img src = "resources/media/icon/header-icon.png"></td>
+                </tr>
+                <tr>
+                    <td class = "td_border"><p>Competitions 1</p></td>
+                    <td><img src = "resources/media/icon/header-icon.png"></td>
+                </tr>
+                <tr>
+                    <td class = "td_border"><p>Competitions 2</p></td>
+                    <td><img src = "resources/media/icon/header-icon.png"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Publications -->
+        <div id="Publications" class="tabContents">
+            <table>
+                <tr>
+                    <td class = "td_border"><p>Publications 1</p></td>
+                    <td><img src = "resources/media/icon/header-icon.png"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Blogs and Articles -->
+        <div id="Articles" class="tabContents">
+            <table>
+                <tr>
+                    <td class = "td_border"><p>Blog/Article 1</p></td>
+                    <td><img src = "resources/media/icon/header-icon.png"></td>
+                </tr>
+                <tr>
+                    <td class = "td_border"><p>Blog/Article 2</p></td>
+                    <td><img src = "resources/media/icon/header-icon.png"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Contact Info-->
+        <div id="Contacts">
+            <tr>
+                <td>
+                    <p>shivamjaiswal095.work@gmail.com</p>
+                </td>
+            </tr>
+        </div>
+
+
+
     </body>
 </html>
