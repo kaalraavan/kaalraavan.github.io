@@ -52,3 +52,16 @@ body {
     transform: translate(-50%, -50%);
     font-size: 3vw ;
 }
+
+
+.tablinks{
+    background: none;
+    color: black;
+    border: none;
+    margin: none;
+    padding: none;
+    font-size: 1.5vw; /*add appropirate value*/
+    width: 10.8%;
+    height: auto; /*add appropirate value*/
+
+}
