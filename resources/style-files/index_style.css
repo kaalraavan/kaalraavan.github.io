@@ -19,9 +19,10 @@ img{
     margin: 0;
     padding: 0;
     border: 0;
+    align-self: center;
 }
 .td_border{
-    border-right: 2px solid black;
+    /* border-right: 2px solid black; */
     text-align: center;
     width: 50%;
     font-size: 1vw;
@@ -102,4 +103,8 @@ table {
     border: 0;
     width: 100%;
     height: auto;
+}
+
+#td {
+    
 }
