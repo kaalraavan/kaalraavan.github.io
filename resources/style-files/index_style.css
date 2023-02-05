@@ -1,6 +1,17 @@
+/* #top_tab {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 23px;
+} */
+
 .tabContents {
-    
+    margin: 0;
+    display: none;
 }
+
 
 img{
     width: 70px;
@@ -63,11 +74,21 @@ body {
 
 
 .tablinks{
-    background: none;
+    background-color: black;
     color: white;
+
     border: none;
-    margin: none;
-    padding: none;
+    
+    margin-top: 0.5%;
+    margin-left: none;
+    margin-right: none;
+    margin-bottom: 1%;
+
+    padding-top: 0.5;
+    padding-left: none;
+    padding-right: none;
+    padding-bottom: 1%;
+
     font-size: 1.5vw; /*add appropirate value*/
     width: 10.3%;
     height: auto; /*add appropirate value*/
