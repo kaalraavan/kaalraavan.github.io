@@ -1,3 +1,7 @@
+@import "animations.css";
+
+
+
 /* #top_tab {
     position: fixed;
     top: 0;
@@ -8,6 +12,7 @@
 } */
 
 .tabContents {
+    animation: fadeEffect 0.9s;
     margin: 0;
     display: none;
 }
@@ -103,8 +108,4 @@ table {
     border: 0;
     width: 100%;
     height: auto;
-}
-
-#td {
-    
 }
