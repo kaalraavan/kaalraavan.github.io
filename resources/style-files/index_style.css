@@ -70,7 +70,9 @@ body {
 
 }
 
-.text_on_first_image{
+
+/* Formating of texts on the top image */
+.text_on_first_image{                           
     position: absolute;
     left: 50%;
     top: 37vw;
@@ -108,4 +110,26 @@ table {
     border: 0;
     width: 100%;
     height: auto;
+}
+
+@media screen and (max-width: 1080px){
+ 
+    .text_on_first_image{                           
+        position: absolute;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        font-size: 5vw ;
+    }    
+
+
+     /*Temp*/
+    .site_develpoment { 
+        position: absolute;
+        left: 50%;
+        top: 62%;
+        transform: translate(-50%, -50%);
+        font-size: 3vw;
+
+}
 }
