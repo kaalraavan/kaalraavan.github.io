@@ -18,4 +18,17 @@ function tabControl(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
 document.getElementById("defaultOpenTab").click();
+document.getElementById("top_tabs").style.top = "-20vh";
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 870 || document.documentElement.scrollTop > 870) {
+    document.getElementById("top_tabs").style.top = "0";
+  } else {
+    document.getElementById("top_tabs").style.top = "-20vh";
+  }
+}
+

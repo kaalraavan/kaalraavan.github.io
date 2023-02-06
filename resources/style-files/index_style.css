@@ -1,20 +1,16 @@
 @import "animations.css";
 
 
-
-/* #top_tab {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    width: 100%;
-    height: 23px;
-} */
-
-.tabContents {
-    animation: fadeEffect 0.9s;
+body {
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
     margin: 0;
-    display: none;
+    padding: 0;
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
 }
 
 
@@ -26,11 +22,63 @@ img{
     border: 0;
     align-self: center;
 }
-.td_border{
+
+/* #top_tab {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 23px;
+} */
+
+#top_tabs{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: black;
+    transition: top 0.5s;
+}
+#top_tabs button:hover{
+    color:rgb(224, 224, 224);
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#top_tabs button.active{
+    font-size: 1.65vw;
+    font-weight: bold;
+    color: white;
+    animation: fadeEffect_tabClick 0.9s;
+ 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.tabContents {
+    /* animation: fadeEffect 0.9s; */
+    margin: 0;
+    display: none;
+    scroll-behavior:smooth;
+    overflow: auto;
+}
+
+
+.td_text{
     /* border-right: 2px solid black; */
     text-align: center;
     width: 50%;
     font-size: 1vw;
+}
+
+
+tr{
+    height: 90vh;
+    border-bottom: 5px;
+    border-color: white;
+    top: 10vh;
 }
 
 /*table{
@@ -41,17 +89,6 @@ img{
     width: 100%;
     height: 100%;
     padding: none;
-}
-
-body {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color: white;
 }
 
 .text_image{
@@ -82,8 +119,8 @@ body {
 
 
 .tablinks{
-    background-color: black;
-    color: white;
+    background-color: rgb(0, 0, 0);
+    color: rgb(148, 148, 148);
 
     border: none;
     
@@ -98,8 +135,8 @@ body {
     padding-bottom: 1%;
 
     font-size: 1.5vw; /*add appropirate value*/
-    width: 10.3%;
-    height: auto; /*add appropirate value*/
+    width: 10%;
+    height: 10vh; /*add appropirate value*/
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -111,6 +148,17 @@ table {
     width: 100%;
     height: auto;
 }
+
+
+ul{
+    list-style-type: none;
+}
+
+
+
+
+
+/* Formatting for phone */
 
 @media screen and (max-width: 1080px){
  
@@ -129,7 +177,10 @@ table {
         left: 50%;
         top: 62%;
         transform: translate(-50%, -50%);
-        font-size: 3vw;
+        font-size: 2.5vw;
+    }
 
-}
+    p{
+        font-size: 3vw;
+    }
 }
