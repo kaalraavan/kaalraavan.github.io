@@ -19,11 +19,16 @@ function tabControl(evt, tabName) {
   evt.currentTarget.className += " active";
 }
 
+
+//Default view of the tab
 document.getElementById("defaultOpenTab").click();
+
+
+
+
+//For hiding and bringing forward tabs
 document.getElementById("top_tabs").style.top = "-20vh";
-
 window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
   if (document.body.scrollTop > 870 || document.documentElement.scrollTop > 870) {
     document.getElementById("top_tabs").style.top = "0";
