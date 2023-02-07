@@ -21,7 +21,7 @@ function tabControl(evt, tabName) {
 
 
   var y_axis;
-  y_axis = document.documentElement.clientHeight;   //returns the heigth of the screen
+  y_axis = document.documentElement.clientHeight +100;   //returns the heigth of the screen
   window.scrollTo({         //to scroll to the size of the screen
     top: y_axis,
     behavior: "smooth"
