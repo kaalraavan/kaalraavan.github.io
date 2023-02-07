@@ -1,4 +1,8 @@
 @import "animations.css";
+@font-face {
+    font-family: Chanakya;
+    src: url(resources/fonts/ChanakyaRegular.ttf);
+}
 
 
 body {
@@ -71,7 +75,9 @@ img{
     /* border-right: 2px solid black; */
     width: 100vw;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position-x: right 5vw;
+    background-position-y: center;
+    background-size: contain;
 }
 
 
@@ -86,7 +92,7 @@ p{
     text-align: justify;
     margin-left: 5vw;
     margin-right:40vw;
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
 
@@ -126,9 +132,10 @@ p{
 .GeetaSar_1{
     position: absolute;
     left: 50%;
-    top: 45vw;
+    top: 43vw;
     transform: translate(-50%, -50%);
     font-size: 1.5vw;
+    font-family: Chanakya;
 }
 
 .tablinks{
@@ -172,13 +179,27 @@ a button:hover{
 }
 
 
-.download_button{
+.link_button{
     background-color: rgb(122, 122, 122);
     color: white;
     border: none;
     font-size: 1.5vw;
     padding: 10px 100px; 
 }
+
+
+.contacts{
+     font-size: 1.5vw;
+    /*height: 100vh;
+    width: 100wh; */
+    text-align: center;
+}
+.img_contacts{
+    border-radius: 30%;
+    width: 7vh;
+    height: auto;
+}
+
 
 /* Formatting for phone */
 
@@ -206,7 +227,7 @@ a button:hover{
         font-size: 2.5vw;
         text-align: justify;
         margin-left:5vw;
-        margin-right:25vw;
+        margin-right:30vw;
     }
 
     .td_prop{
@@ -215,7 +236,7 @@ a button:hover{
         background-repeat: no-repeat;
         background-position: right;
     }
-    .download_button{
+    .link_button{
         background-color: rgb(122, 122, 122);
         color: white;
         border: none;
@@ -223,4 +244,21 @@ a button:hover{
         font-size: 2.5vw;
     }
     
+
+
+
+
+
+
+    .contacts{
+        font-size: 4vw;
+    }
+    .img_contacts{
+        border-radius: 30%;
+        width: 6vh;
+        height: auto;
+    }
+    
+    
+
 }
