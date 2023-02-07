@@ -109,7 +109,7 @@ tr{
 
 
 /* Formating of texts on the top image */
-.text_on_first_image{                           
+.name{                           
     position: absolute;
     left: 50%;
     top: 37vw;
@@ -117,6 +117,13 @@ tr{
     font-size: 3vw ;
 }
 
+.GeetaSar_1{
+    position: absolute;
+    left: 50%;
+    top: 45vw;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vw;
+}
 
 .tablinks{
     background-color: rgb(0, 0, 0);
@@ -161,7 +168,7 @@ ul{
 
 @media screen and (max-width: 1080px){
  
-    .text_on_first_image{                           
+    .name{                           
         position: absolute;
         left: 50%;
         top: 55%;
