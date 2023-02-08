@@ -26,19 +26,18 @@ function tabControl(evt, tabName) {
     top: y_axis,
     behavior: "smooth"
   });
+  if((window.matchMedia("(max-width: 1080px)").matches)){
+    document.getElementById("top_tabs").style.display = "none";
+  }
 }
 
 
 //Default view of the tab
 document.getElementById("defaultOpenTab").click();
 
-
-var screen_size;
-
 //For hiding and bringing forward tabs
  // to check the media, media query
 if(!(window.matchMedia("(max-width: 1080px)").matches)){
-
   document.getElementById("top_tabs").style.top = "-20vh";
   window.onscroll = function() {scrollFunction()};
 }
@@ -57,10 +56,11 @@ function scrollFunction() {
 function hide_seek_function(){
   var x;
   x = document.getElementById("top_tabs");
-  if(x.style.display === "none"){
+  if(x.style.display == "none"){
     x.style.display = "block";
   }
   else{
     x.style.display = "none";
   }
 }
+
