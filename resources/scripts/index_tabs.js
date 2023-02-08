@@ -21,7 +21,7 @@ function tabControl(evt, tabName) {
 
 
   var y_axis;
-  y_axis = document.documentElement.clientHeight +100;   //returns the heigth of the screen and 100px
+  y_axis = document.documentElement.clientHeight;   //returns the heigth of the screen
   window.scrollTo({         //to scroll to the size of the screen
     top: y_axis,
     behavior: "smooth"
@@ -33,11 +33,16 @@ function tabControl(evt, tabName) {
 document.getElementById("defaultOpenTab").click();
 
 
-
+var screen_size;
 
 //For hiding and bringing forward tabs
-document.getElementById("top_tabs").style.top = "-20vh";
-window.onscroll = function() {scrollFunction()};
+ // to check the media, media query
+if(!(window.matchMedia("(max-width: 1080px)").matches)){
+
+  document.getElementById("top_tabs").style.top = "-20vh";
+  window.onscroll = function() {scrollFunction()};
+}
+
 function scrollFunction() {
   var y_axis;
   y_axis = document.documentElement.clientHeight;
@@ -48,3 +53,14 @@ function scrollFunction() {
   }
 }
 
+
+function hide_seek_function(){
+  var x;
+  x = document.getElementById("top_tabs");
+  if(x.style.display === "none"){
+    x.style.display = "block";
+  }
+  else{
+    x.style.display = "none";
+  }
+}
