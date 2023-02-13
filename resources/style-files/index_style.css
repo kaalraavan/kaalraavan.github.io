@@ -78,8 +78,7 @@ body {
     background-size: contain;
 
     display: flex;
-    align-items: center;
-
+    align-items:center;
 }
 
 
@@ -112,18 +111,10 @@ p{
     color: white;
 }
 
-/*Temp*/
-.site_develpoment { 
-    position: absolute;
-    left: 50%;
-    top: 45vw;
-    transform: translate(-50%, -50%);
-    font-size: 1.5vw;
 
+.list_format{
+    left: 10px;
 }
-
-
-
 
 .GeetaSar_1{
     position: absolute;
@@ -158,19 +149,6 @@ p{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-table {
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    right: 0;
-    width: 100vw;
-    height: auto;
-}
-
-
-ul{
-    list-style-type: none;
-}
 
 a button:hover{
     cursor: pointer;
@@ -208,6 +186,23 @@ a button:hover{
     margin-top: 0px;
 }
 
+
+.skill_name{
+    display: inline-block;
+    width: auto;
+    text-align: left;
+    margin-left: 5vw;
+    /* font-size: 1vw; */
+}
+
+.list_format{
+    font-size: 2.2vw;
+}
+
+#icon_format{
+    color:red;
+    font-size: 1.5vw;
+}
 
 /* Formatting for phone */
 
@@ -251,7 +246,7 @@ a button:hover{
         font-size: 3vw;
         text-align: justify;
         margin-left:5vw;
-        margin-right:30vw;
+        margin-right:20vw;
     }
 
     .td_prop{
@@ -320,7 +315,30 @@ a button:hover{
         height: 1px;
     }
 
-
+    .skill_name{
+        display: inline-block;
+        width: auto;
+        text-align: left;
+        margin-left: 5vw;
+        /* font-size: 1vw; */
+    }
+    
+    .list_format{
+        font-size: 1.65vw;
+        width: 20vw;
+    }
+    
+    #icon_format{
+        color:red;
+        font-size: 3vw;
+    }
+/* 
+    progress{
+        background-color: white;
+        color: skyblue
+    }
+     */
+    
 
 
 
@@ -336,4 +354,13 @@ a button:hover{
     .footer{
         margin:0px;
     }
+}
+
+
+@media screen and (min-width: 1080px){
+    progress{
+        background-color: white;
+        border-radius: 10px;
+        height: 10px;
+    } 
 }
