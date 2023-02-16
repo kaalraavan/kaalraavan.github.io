@@ -73,7 +73,6 @@ body {
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
-    background-position-x: right 5vw;
     background-position-y: center;
     background-size: contain;
 
@@ -254,6 +253,8 @@ a button:hover{
         width: 100vw;
         background-repeat: no-repeat;
         background-position: right;
+
+        background-size: 50% auto;
     }
     .link_button{
         background-color: rgb(122, 122, 122);
@@ -332,14 +333,6 @@ a button:hover{
         color:red;
         font-size: 3vw;
     }
-/* 
-    progress{
-        background-color: white;
-        color: skyblue
-    }
-     */
-    
-
 
 
     .contacts{
@@ -363,4 +356,8 @@ a button:hover{
         border-radius: 10px;
         height: 10px;
     } 
+    .td_prop{
+        background-position-x: right 12vw;
+        background-size: 30% auto;
+    }
 }
